@@ -38,7 +38,7 @@ const Navbar = () => {
       <div className={`${styles.NavLinks} ${menuOpen ? styles.showMenu : ''}`}>
         {NavLinks.map((I) => (
           <Link
-            target="_blank"
+            // target="_blank"
             href={I.LinkTo}
             key={I.LinkText}
             className={`${styles.NavLink} ${I.LinkText === 'Try Something New' ? styles.TryNewLink : ''}`}
