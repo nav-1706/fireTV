@@ -1,6 +1,12 @@
+"use client";
+
 import React from 'react';
-import Marquee from 'react-fast-marquee';
+import dynamic from 'next/dynamic';
 import styles from './Channels.module.css';
+
+const Marquee = dynamic(() => import('react-fast-marquee').then(mod => mod.default), {
+  ssr: false,
+});
 
 const ottPlatforms = [
   { name: 'Netflix', img: '/assets/netflix.png' },

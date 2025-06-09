@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST="{}"
+self.__REACT_LOADABLE_MANIFEST='{"app\\\\(root)\\\\_components\\\\Channels\\\\Channels.tsx -> react-fast-marquee":{"id":1932,"files":["static/chunks/932.e4c31a946456a5fc.js"]}}';
