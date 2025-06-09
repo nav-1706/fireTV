@@ -7,11 +7,10 @@ import Link from 'next/link';
 // ... rest of your component
 
 const NavLinks = [
-  { LinkText: "Home", LinkTo: "/Home" },
-  { LinkText: "Store", LinkTo: "https://www.primevideo.com/storefront/ref=atv_hom_pri_c_9zZ8D2_str_hom?contentType=home&contentId=store" },
-  { LinkText: "Live TV", LinkTo: "https://www.primevideo.com/storefront/ref=atv_hom_pri_c_9zZ8D2_live?contentType=home&contentId=live" },
-  { LinkText: "Categories", LinkTo: "https://www.primevideo.com/categories/ref=atv_hom_pri_c_9zZ8D2_cat" },
-  { LinkText: "Try Something New", LinkTo: "https://www.primevideo.com/mystuff/ref=atv_hom_pri_c_9zZ8D2_mys" },
+  { LinkText: "Store", LinkTo: "/" },
+  { LinkText: "Live TV", LinkTo: "/" },
+  { LinkText: "Categories", LinkTo: "/" },
+  { LinkText: "Try Something New", LinkTo: "/" },
 ];
 
 const Navbar = () => {
