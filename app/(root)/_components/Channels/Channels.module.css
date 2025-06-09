@@ -1,0 +1,85 @@
+.Channels {
+  padding: 4rem 2rem;
+  background-color: #0e0e0e;
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.heading {
+  max-width: 700px;
+  margin: 0 auto 2.5rem auto;
+  padding: 0 1rem;
+}
+
+.heading h6 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.heading p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #bbbbbb;
+  margin: 0;
+}
+
+.ottLogoBox {
+  margin: 0 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.ottLogoBox:hover {
+  transform: scale(1.1);
+}
+
+.ottLogo {
+  height: 60px;
+  max-width: 120px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.2));
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .heading h6 {
+    font-size: 1.5rem;
+  }
+
+  .heading p {
+    font-size: 0.95rem;
+  }
+
+  .ottLogoBox {
+    margin: 0 1.5rem;
+  }
+
+  .ottLogo {
+    height: 50px;
+    max-width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading h6 {
+    font-size: 1.25rem;
+  }
+
+  .heading p {
+    font-size: 0.9rem;
+  }
+
+  .ottLogoBox {
+    margin: 0 1rem;
+  }
+
+  .ottLogo {
+    height: 45px;
+    max-width: 80px;
+  }
+}

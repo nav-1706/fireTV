@@ -1,0 +1,141 @@
+.NavbarMain {
+  background: var(--mainColor);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.NavbarMain img {
+  height: 100px;       /* Set a good visible height */
+  width: auto;        /* Maintain aspect ratio */
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.NavbarMain img:hover {
+  transform: scale(1.05);  /* Slight zoom on hover for subtle effect */
+}
+
+
+/* Logo
+.logo {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+} */
+
+/* Nav Links - default horizontal */
+.NavLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  transition: max-height 0.3s ease;
+}
+
+.NavLink {
+  color: #938c8c;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.NavLink:hover {
+  color: #fff;
+}
+
+/* Hamburger Menu Button - hidden on desktop */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  padding: 0;
+  z-index: 1000;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #938c8c;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* Animate bars when active */
+.bar1Active {
+  transform: rotate(-45deg) translate(-5px, 6px);
+  background-color: #fff;
+}
+
+.bar2Active {
+  opacity: 0;
+}
+
+.bar3Active {
+  transform: rotate(45deg) translate(-5px, -6px);
+  background-color: #fff;
+}
+
+/* Responsive */
+
+/* Tablets and below */
+@media (max-width: 1024px) {
+  .NavbarMain {
+    padding: 1rem;
+  }
+}
+
+/* Mobile: hamburger appears, nav links hidden initially */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .NavLinks {
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+  }
+
+  .NavLinks.showMenu {
+    max-height: 500px; /* enough to show all links */
+  }
+
+  .NavLink {
+    padding: 1rem 0;
+    border-bottom: 1px solid #444;
+  }
+}
+
+.TryNewLink {
+  color: #fc4c02;
+  font-weight: 800;
+  position: relative;
+  text-decoration: none;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+/* Hover brighter */
+.TryNewLink:hover {
+  color: #ffff;
+}
+
+/* Glowing animation */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fc4c02, 0 0 10px #fc4c02, 0 0 15px #fc4c02;
+  }
+  to {
+    text-shadow: 0 0 10px #fc4c02, 0 0 20px #fc4c02, 0 0 30px #fc4c02;
+  }
+}
+

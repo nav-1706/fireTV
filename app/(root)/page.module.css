@@ -1,0 +1,80 @@
+.Home {
+  background: url(/assets/Hero2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.HomeContent::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.85) 60%, transparent 80%);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+.HomeContent div {
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+  padding: 3rem;
+  max-width: 700px;
+  backdrop-filter: blur(2px);
+  background-color: rgba(0, 0, 0, 0.4); /* subtle background behind text */
+  border-radius: 0.5rem;
+}
+
+.HomeContent div h6 {
+  font-weight: 800;
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 0.5rem;
+}
+
+.HomeContent div h5 {
+  font-weight: 600;
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  color: #dddddd;
+  margin-bottom: 2rem;
+}
+
+/* ✅ Responsive Improvements */
+@media (max-width: 768px) {
+  .Home {
+    height: auto;
+    padding: 3rem 0;
+    justify-content: center;
+  }
+
+  .HomeContent div {
+    padding: 2rem;
+    margin: 1rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .HomeContent::before {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), transparent);
+  }
+}
+
+@media (max-width: 480px) {
+  .Home {
+    padding: 2rem 0;
+  }
+
+  .HomeContent div h6 {
+    font-size: 1.6rem;
+  }
+
+  .HomeContent div h5 {
+    font-size: 1rem;
+  }
+}
