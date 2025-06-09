@@ -1,0 +1,188 @@
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./app/(root)/_components/Channels/Channels.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************/
+.Channels_Channels__W442E {
+  padding: 4rem 2rem;
+  background-color: #0e0e0e;
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Channels_heading__pErkp {
+  max-width: 700px;
+  margin: 0 auto 2.5rem auto;
+  padding: 0 1rem;
+}
+
+.Channels_heading__pErkp h6 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.Channels_heading__pErkp p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #bbbbbb;
+  margin: 0;
+}
+
+.Channels_ottLogoBox__a2zRH {
+  margin: 0 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.Channels_ottLogoBox__a2zRH:hover {
+  transform: scale(1.1);
+}
+
+.Channels_ottLogo__1X5ra {
+  height: 60px;
+  max-width: 120px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.2));
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .Channels_heading__pErkp h6 {
+    font-size: 1.5rem;
+  }
+
+  .Channels_heading__pErkp p {
+    font-size: 0.95rem;
+  }
+
+  .Channels_ottLogoBox__a2zRH {
+    margin: 0 1.5rem;
+  }
+
+  .Channels_ottLogo__1X5ra {
+    height: 50px;
+    max-width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Channels_heading__pErkp h6 {
+    font-size: 1.25rem;
+  }
+
+  .Channels_heading__pErkp p {
+    font-size: 0.9rem;
+  }
+
+  .Channels_ottLogoBox__a2zRH {
+    margin: 0 1rem;
+  }
+
+  .Channels_ottLogo__1X5ra {
+    height: 45px;
+    max-width: 80px;
+  }
+}
+
+/*!**********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./app/(root)/page.module.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************/
+.page_Home__Q8tMA {
+  background: url(/assets/Hero2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.page_HomeContent__1HccX::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.85) 60%, transparent 80%);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+.page_HomeContent__1HccX div {
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+  padding: 3rem;
+  max-width: 700px;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  background-color: rgba(0, 0, 0, 0.4); /* subtle background behind text */
+  border-radius: 0.5rem;
+}
+
+.page_HomeContent__1HccX div h6 {
+  font-weight: 800;
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 0.5rem;
+}
+
+.page_HomeContent__1HccX div h5 {
+  font-weight: 600;
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  color: #dddddd;
+  margin-bottom: 2rem;
+}
+
+/* ✅ Responsive Improvements */
+@media (max-width: 768px) {
+  .page_Home__Q8tMA {
+    height: auto;
+    padding: 3rem 0;
+    justify-content: center;
+  }
+
+  .page_HomeContent__1HccX div {
+    padding: 2rem;
+    margin: 1rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .page_HomeContent__1HccX::before {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), transparent);
+  }
+}
+
+@media (max-width: 480px) {
+  .page_Home__Q8tMA {
+    padding: 2rem 0;
+  }
+
+  .page_HomeContent__1HccX div h6 {
+    font-size: 1.6rem;
+  }
+
+  .page_HomeContent__1HccX div h5 {
+    font-size: 1rem;
+  }
+}
+
+/*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./Components/Button/Button.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************/
+.Button_Button__DcdmW {
+    background: #fc4c02;
+    color: #fff;
+    font-weight: 800;
+    padding: 10px 14px;
+    border-radius: 2px;
+}
+
+.Button_Button__DcdmW:hover {
+    background: #ff8c5b;
+}
