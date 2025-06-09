@@ -1,22 +1,3 @@
 {
-  "pages": {
-    "/(root)/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/css-Components_Button_Button_module_css-app_root__components_Channels_Channels_module_css-app-702c16.css",
-      "static/chunks/app/(root)/page.js"
-    ],
-    "/(root)/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/css-Layout_Footer_Footer_module_css-Layout_Navbar_Navbar_module_css.css",
-      "static/chunks/app/(root)/layout.js"
-    ],
-    "/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/css-app_globals_css-node_modules_next_font_google_target_css.css",
-      "static/chunks/app/layout.js"
-    ]
-  }
+  "pages": {}
 }
